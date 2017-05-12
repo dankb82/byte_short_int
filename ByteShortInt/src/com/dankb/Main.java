@@ -3,8 +3,12 @@ package com.dankb;
 public class Main {
 
     public static void main(String[] args) {
-        int myMinValue = -2_147_483_648;
-        int myMaxValue = 2_147_483_648;
+
+        byte byteChallengeValue = 120;
+        short shortChallengeValue = 12000;
+        int intChallengeValue = 1_200_450;
+        long longChallengeValue = (long) 50000 + (10* (byteChallengeValue + shortChallengeValue + intChallengeValue));
+        System.out.println("The total is: " + longChallengeValue);
 
     }
 }
