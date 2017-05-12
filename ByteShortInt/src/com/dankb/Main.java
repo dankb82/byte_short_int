@@ -9,7 +9,7 @@ public class Main {
         int intChallengeValue = 1_200_450;
 
         //not necessary to cast because long will accept an integer
-        long longChallengeValue =  50000 + (10* (byteChallengeValue + shortChallengeValue + intChallengeValue));
+        long longChallengeValue =  50000L + (10L * (byteChallengeValue + shortChallengeValue + intChallengeValue));
         System.out.println("The total is: " + longChallengeValue);
 
     }
